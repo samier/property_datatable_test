@@ -6,7 +6,7 @@
         <title>Laravel</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{('css/app.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
         <!-- Styles -->
         <style>
@@ -18,31 +18,22 @@
                 height: 100vh;
                 margin: 0;
             }
-
-            .full-height {
-                height: 100vh;
-            }
-
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
             }
-
             .position-ref {
                 position: relative;
             }
-
             .top-right {
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
-
             .content {
                 text-align: center;
             }
-
             .title {
                 font-size: 84px;
             }
@@ -50,7 +41,7 @@
                 width: 100%;
             }
             .sorting {
-                background-image: url('/images/sort_both.png');
+                background-image: url('{{ asset("images/sort_both.png") }}');
                 max-width: 100%;
                 background-repeat: no-repeat;
                 background-position: center right;
@@ -62,7 +53,7 @@
                 top: 32%;
             }
             .sorting_asc {
-                background-image: url('/images/sort_asc.png');
+                background-image: url('{{ asset("images/sort_asc.png") }}');
                 max-width: 100%;
                 background-repeat: no-repeat;
                 background-position: center right;
@@ -74,7 +65,7 @@
                 top: 32%;
             }
             .sorting_desc {
-                background-image: url('/images/sort_desc.png');
+                background-image: url('{{ asset("images/sort_desc.png") }}');
                 max-width: 100%;
                 background-repeat: no-repeat;
                 background-position: center right;
@@ -121,6 +112,6 @@
             </div>
         </div>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="/js/app.js"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
