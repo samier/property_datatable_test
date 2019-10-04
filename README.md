@@ -22,7 +22,7 @@
       DB_USERNAME=<DB_USER>
       DB_PASSWORD=<DB_PASSWORD>
 
-     If you are using the virtual host then give the path to public folder.
+     If you are using the virtual host then use the virtual host in **APP_URL** else give the path to public folder in **APP_URL** For eg. http://localhost/property/public/
 
 - After setting the database connections, Run below command to create the tables.
 
